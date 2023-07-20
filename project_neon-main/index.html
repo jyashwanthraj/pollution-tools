@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt="logo" class="images"></a>
+        <ul>
+            <li><a href="POLLUTANTS_FINDER/index.html" class="active">LIVE VALUES</a></li>
+            <li><a href="visualizer.html">VISUALIZER</a></li>
+            <li><a href="PORTFOLIO/html.html">ABOUT US</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" alt="stars" id="stars">
+        <img src="moon.png" alt="moon" id="moon">
+        <img src="mountains_behind.png" alt="mountains_behind" id="mountains_behind">
+        <h2 id="text">Team Neon</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="mountains_front.png" alt="mountains_front" id="mountains_front">
+    </section>
+    <div id="sec">
+        <h2>Pollutants Analysis Tools</h2>
+        <p>
+            Protecting the atmospheric environment involves control of atmospheric emissions as well as an
+            understanding of pollutant dispersion, monitoring
+            emission levels, i.e. concentration in ambient air.
+        </p>
+        <p>
+            To monitor these levels there are Air Quality Monitoring
+            API’s The main objective of these Networks is to record
+            the concentration levels of atmospheric pollutants in
+            order to define air quality levels and establish action
+            plans if high levels of contamination are detected.
+        </p>
+
+       <p>
+        Air Quality Monitoring Networks allow the
+        measurement, operation and predictive analysis of
+        the evolution of air pollution in different areas
+        (urban areas, industrial areas, special nature
+        conservation areas, etc.)
+        </p>
+
+       <p style="padding-top: 20px">
+        ● To monitor the air in the environment using API’s<br>
+        ● the process of monitoring various aspects of the
+        environment such as the air quality monitoring
+        issue.<br>
+        ● This system has features for people to monitor the
+        amount of pollution on their mobile phones using
+        the application.<br>
+        ● This measures the air quality in real-time <br>
+        </p>
+
+       
+
+
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let mountains_front = document.getElementById('mountains_front');
+        
+        window.addEventListener('scroll', () => {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.left = value * 1.05 + 'px';
+            mountains_behind.style.left = value * 0.5 + 'px';
+            mountains_front.style.left = value * 0 + 'px';
+            text.style.left = value * 4 + 'px';
+        });
+    </script>
+</body>
+</html>
